@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="CSS/style2.css" />
+        <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+        <link rel="stylesheet" href="CSS/all.min.css">
+ 
+  
+       
+        <title>Register | Train Reservation System</title>
+    </head>
+    
+   
+    <body> 
+       
+            <header>
+                 <!-- Nav Bar Start -->
+                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Train</a>
+                    <button
+                      class="navbar-toggler"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#navbarSupportedContent"
+                      aria-controls="navbarSupportedContent"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                    >
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="reserve_train.html">Reserve Train</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="view_ticket.html">View Ticket</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="contact_us.html">Contact Us</a>
+                        </li>
+            
+                      </ul>
+                      <div class="d-flex">
+                        <button class="btn btn-outline-success findbtn " type="submit">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <a href="Login.html" class="btn btn-outline-success" type="submit">
+                          Log in
+                        </a>
+                        <a href="Register.html" class="btn btn-outline-success" type="submit">
+                          Sign Up
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+              <div class="search" style="display: none">
+                  <input
+                      class="form-control"
+                      type="text"
+                      placeholder="Search"
+                      aria-label="default input example"
+                  />
+              </div>
+    <!-- Nav Bar End -->
+            </header>
+             
+
+     
+            <div
+            class="modal fade mt-2"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">
+                            Error
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close closebtn"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body"><h3 class="modal__content"></h3></div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-secondary closebtn"
+                            data-bs-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="r-main_wrapper">
+            <div class="register"> 
+                <div class = "container pt-3 pb-3 ">
+                    
+                    <h1>Sign Up</h1>
+                    
+                        <form name = "SignUp"id="signup">
+                        <div class="form-group pt-2">
+                            <label for="Email1">Email address</label>
+                            <input name="Email1" type="email" class="form-control" id="Email1" aria-describedby="emailHelp" placeholder="Enter email" >
+                          </div>
+                           
+                        <div class="form-group pt-2">
+                            <label for="Email2">Confirm Email</label>
+                            <input name = "Email2"type="email" class="form-control" id="Email2" aria-describedby="emailHelp" placeholder="Enter email" >
+                        </div>
+                        
+                          <div class="form-group pt-2">
+                            <label for="Password1">Password</label>
+                            <input name = "Pass1" type="password" class="form-control" id="Password1" placeholder="Password" >
+                          </div>
+                            
+                        <div class="form-group pt-2">
+                            <label for="Password2">Confirm Password</label>
+                            <input name = "Pass2" type="password" class="form-control" id="Password2" placeholder="Password" >
+                          </div>
+                          <div class="form-check pt-2 pb-2">
+                            <input type="checkbox" class="form-check-input" id="check" >
+                            <label class="form-check-label" for="check"> I have read and accepted the <a id="terms1" href="TermsAndConditions.html">terms and conditions</a></label>
+                          </div>
+                          
+                        </form>
+                    <button class="btn btn-primary submitbtn" id="btn3" >Sign Up</button>
+                    
+                        
+                </div>
+            </div>
+            
+            
+            <div id="error-message"></div>
+        </div>
+            
+        
+                <!-- Footer Section Start -->
+    <footer class="footer">
+        <h2>Train Reservation System</h2>
+        <ul class="footer__social">
+            <li> <span class="face"><a href="#"><i class="fab fa-facebook-f"></i></a></span></li>
+            <li><span class="google"><a href="#"><i class="fab fa-google"></i></a></span></li>
+            <li><span class="linked"><a href="#"><i class="fab fa-linkedin-in"></i></a></span></li>
+            <li><span class="twitter"><a href="#"><i class="fab fa-twitter"></i></a></span></li>
+        </ul>
+    </footer>
+        <!-- Footer Section End -->
+        <script src="JS/bootstrap.bundle.min.js"></script>
+        <script src="JS/all.min.js"> </script>
+        <script src="JS/javascriptfile.js"> </script>
+    </body>
+</html>

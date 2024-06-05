@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Train</title>
+    <!-- Bootstrap  CSS File -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CSS File -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <!-- AOS CSS File -->
+    <link rel="stylesheet" href="CSS/aos.css">
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <!-- Nav Bar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Train</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reserve_train.html">Reserve Train</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="view_ticket.html">View Ticket</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact_us.html">Contact Us</a>
+            </li>
+
+          </ul>
+          <div class="d-flex">
+            <button class="btn btn-outline-success findbtn " type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <a href="Login.html" class="btn btn-outline-success" type="submit">
+              Log in
+            </a>
+            <a href="Register.html" class="btn btn-outline-success" type="submit">
+              Sign Up
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  <div class="search" style="display: none">
+      <input
+          class="form-control"
+          type="text"
+          placeholder="Search"
+          aria-label="default input example"
+      />
+  </div>
+    <!-- Nav Bar End -->
+
+    <!-- First Section Start (Reservation Form) -->
+    <section class="reserve">
+      <div class="reserve__img">
+        <img src="Images/trainbackground.png" alt="" />
+        <div class="reserve__content">
+          <div class="container">
+            <h1>Search train in the Egypt</h1>
+            <div class="reserve__input d-flex align-items-center ">
+                <div class="dis w-100 mx-2">
+                  <div class="input-group flex-nowrap">
+                    <span class="input-group-text" id="addon-wrapping"
+                      ><i class="fa-solid fa-location-dot"></i
+                    ></span>
+                    <input
+                      type="text"
+                      class="form-control input1"
+                      placeholder="From: address"
+                      id="frominput"
+                    />
+                  </div>
+                </div>
+                <div class="dis mx-2">
+                  <div class="replace">
+                    <button class="replace__btn d-flex justify-content-center"><i class="fa-solid fa-arrow-right-arrow-left replace__icon"></i></button>
+                  </div>
+                </div>
+                <div class="dis w-100 mx-2">
+                  <div class="input-group flex-nowrap">
+                    <span class="input-group-text" id="addon-wrapping"
+                      ><i class="fa-solid fa-location-dot"></i
+                    ></span>
+                    <input
+                      type="text"
+                      class="form-control input2"
+                      placeholder="To: address"
+                      id="toinput"
+                    />
+                  </div>
+                </div>
+                  <div class="dis w-100 mx-2 ">
+                  <div class="input-group flex-nowrap">
+                    <input
+                      type="date"
+                      class="form-control"
+                      value="2022-02-20"
+                      aria-label="Username"
+                      aria-describedby="addon-wrapping"
+                    />
+                    <input
+                      type="date"
+                      class="form-control"
+                      value="2022-02-20"
+                      aria-label="Username"
+                      aria-describedby="addon-wrapping"
+                      id="date"
+                    />
+                  </div>
+                  
+                </div>
+                <div class="dropdown traveler">
+                  <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuClickable" data-bs-toggle="dropdown"  data-bs-auto-close="false" aria-expanded="false">
+                    <span><span class="number mx-1"></span><i class="fa-solid fa-user"></i></span> Travelers
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickable">
+                    <li>Adults <button class="increment btn btn-info"><i class="fa-solid fa-plus"></i></button><span class="data"></span><button class="decrement btn btn-info" ><i class="fa-solid fa-minus"></i></button></li>
+                    <li>Youth <button class="increment1 btn btn-info"><i class="fa-solid fa-plus"></i></button><span class="data1"></span><button class="decrement1 btn btn-info" ><i class="fa-solid fa-minus"></i></button></li>
+                    <li>Child <button class="increment2 btn btn-info"><i class="fa-solid fa-plus"></i></button><span class="data2"></span><button class="decrement2 btn btn-info" ><i class="fa-solid fa-minus"></i></button></li>
+                  </ul>
+                </div>
+            </div>
+            <button class="searchbtn" style="pointer-events: none; opacity: 0.5;">Search</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- First Section End (Reservation Form) -->
+
+    <!-- Second Section Start (Information) -->
+    <section class="info">
+      <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100" data-aos="fade-up" >
+            <div class="card__img">
+              <div class="over"></div>
+            <img src="Images/firstimg.jpeg" class="card-img-top" alt="...">
+          </div>
+            <div class="card-body">
+              <h5 class="card-title">Discover World</h5>
+              <p class="card-text">With over 500 destinations, Train takes you where you want to go.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 " data-aos="fade-up" data-aos-delay="50">
+            <div class="card__img">
+            <img src="Images/secondimg.jpeg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Travel in a Private Room</h5>
+              <p class="card-text">Available on many routes across the country.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" data-aos="fade-up" data-aos-delay="100">
+            <div class="card__img">
+            <img src="Images/thirdimg.jpeg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Road Trip with Your Car on Auto Train</h5>
+              <p class="card-text">Coach fares as low as $89 + the cost of your vehicle.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 mt-2" data-aos="fade-up" >
+            <div class="card__img">
+            <img src="Images/fourthimg.jpeg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">All Aboard with Just Your Phone</h5>
+              <p class="card-text">Download the free Train mobile app for iPhone and Android today.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 mt-2" data-aos="fade-up" data-aos-delay="50">
+            <div class="card__img">
+            <img src="Images/fifthimg.jpeg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Save up to 20%. No Change Fees.</h5>
+              <p class="card-text">Save across World.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 mt-2" data-aos="fade-up" data-aos-delay="0">
+            <div class="card__img">
+            <img src="Images/sixthimg.jpeg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Join Train Guest Rewards</h5>
+              <p class="card-text">Every ride counts as a Train Guest Rewards member. Earn points toward rewards travel, upgrades and more.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+    </section>
+        <!-- Second Section End (Information) -->
+
+        <!-- Third Section Start (statistics)-->
+        <section id="statistics" class="statistics">
+          <div class="container">
+            <h2 class="heading-primary">Statistics</h2>
+            <div class="statistics__content">
+              <div class="statistics__item">
+                <i class="fa-solid fa-city statistics__item__icon"></i>
+                <span class="statistics__item__number" data-to-number="1000"
+                  >0</span
+                >
+                <p class="statistics__item__title">Cities</p>
+              </div>
+              <div class="statistics__item">
+                <i class="fa-solid fa-train statistics__item__icon"></i>
+                <span class="statistics__item__number" data-to-number="800">0</span>
+                <p class="statistics__item__title">Trains</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Third Section End (statistics)-->
+
+        <!-- Fourth Section Start (Offer) -->
+        <section class="offer">
+          <div class="container">
+            <div class="d-flex">
+          <div class="offer__item d-flex">
+            <span class="offer__item__icon"><i class="fa-solid fa-tag"></i></span>
+            <span class="offer__item__content"><h6>Lowest Prices</h6>
+            <p>We partner with the top bus & train carriers to bring you the best deals.</p></span>
+          </div>
+          <div class="offer__item d-flex">
+            <span class="offer__item__icon"><i class="fa-solid fa-circle-check"></i></span>
+            <span class="offer__item__content"><h6>Lowest Prices</h6>
+            <p>We partner with the top bus & train carriers to bring you the best deals.</p></span>
+          </div>
+          <div class="offer__item d-flex">
+            <span class="offer__item__icon"><i class="fa-solid fa-heart"></i></span>
+            <span class="offer__item__content"><h6>Lowest Prices</h6>
+            <p>We partner with the top bus & train carriers to bring you the best deals.</p></span>
+          </div>
+        </div>
+      </div>
+        </div>
+        </section>
+        <!-- Fourth Section End (Offer) -->
+        
+        <!-- Fifth Section Start (Questions) -->
+      <section class="question">
+        <div class="container">
+          <h2 class="question__header">Frequently Questions</h2>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                What is the price of a train ticket?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                $137.00 is the average price of a train ticket. Depending on whether you are traveling locally or long-distance, tickets can be as cheap as $6.00 or as expensive as $372.00.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+        <!-- Fifth Section End (Questions) -->
+
+        <!-- Sixth Section Start (Feature) -->
+        <section class="feature">
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <div class="feature__slider">
+                <div class="feature__content">
+                  <h2> RideReserve for Multi-Ride Passes</h2>
+                  <h3>Passengers traveling with monthly,<br> ten-ride or six-ride passes will be required to confirm their intended trips on reserved services.</h3>
+                  <button class="btn">start planning</button>
+                </div>
+                <div class="feature__img">
+                <img src="Images/feature__img1.gif" class="d-block w-100" alt="...">
+              </div>
+              </div>
+            </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="feature__slider">
+                  <div class="feature__content">
+                    <h2> Track Your Train</h2>
+                    <h3>Check train status and track your train's location.</h3>
+                    <button class="btn">start planning</button>
+                  </div>
+                  <div class="feature__img">
+                  <img src="Images/feature__img2.gif" class="d-block w-100" alt="...">
+                </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="feature__slider">
+                  <div class="feature__content">
+                    <h2>Interactive Planning Map</h2>
+                    <h3>Discover more of America with our interactive planning map.</h3>
+                    <button class="btn">start planning</button>
+                  </div>
+                  <div class="feature__img">
+                  <img src="Images/feature__img3.gif" class="d-block w-100" alt="...">
+                </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+        <!-- Sixth Section End (Feature) -->
+
+        <!-- Footer Section Start -->
+        <footer class="footer">
+          <h2>Train Reservation System</h2>
+          <ul class="footer__social">
+            <li> <span class="face"><a href="#"><i class="fab fa-facebook-f"></i></a></span></li>
+            <li><span class="google"><a href="#"><i class="fab fa-google"></i></a></span></li>
+            <li><span class="linked"><a href="#"><i class="fab fa-linkedin-in"></i></a></span></li>
+            <li><span class="twitter"><a href="#"><i class="fab fa-twitter"></i></a></span></li>
+        </ul>
+        </footer>
+        <!-- Footer Section End -->
+        
+    <!-- Bootstrap js File -->
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome js File  -->
+    <script src="JS/all.min.js"></script>
+    <!-- AOS js File -->
+    <script src="JS/aos.js"></script>
+    <!-- JQuery File -->
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <!-- Main js File -->
+    <script src="JS/reserve_train.js"></script>
+  </body>
+</html>

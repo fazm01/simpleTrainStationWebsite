@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Train</title>
+        <!-- Bootstrap  CSS File -->
+        <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+        <!-- Google Font Link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Font Awesome CSS File -->
+        <link rel="stylesheet" href="CSS/all.min.css" />
+        <!-- AOS CSS File -->
+        <link rel="stylesheet" href="CSS/aos.css" />
+        <!-- Main Style Sheet -->
+        <link rel="stylesheet" href="CSS/style.css" />
+    </head>
+    <body class="ticket">
+        <!-- Nav Bar Start -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Train</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reserve_train.html">Reserve Train</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="view_ticket.html">View Ticket</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact_us.html">Contact Us</a>
+                  </li>
+      
+                </ul>
+                <div class="d-flex">
+                  <button class="btn btn-outline-success findbtn " type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                  <a href="Login.html" class="btn btn-outline-success" type="submit">
+                    Log in
+                  </a>
+                  <a href="Register.html" class="btn btn-outline-success" type="submit">
+                    Sign Up
+                  </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        <div class="search" style="display: none">
+            <input
+                class="form-control"
+                type="text"
+                placeholder="Search"
+                aria-label="default input example"
+            />
+        </div>
+        <!-- Nav Bar End -->
+        <div class="container">
+            <table class="table ticket__table">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">From</th>
+                        <th scope="col">To</th>
+                        <th scope="col">Station</th>
+                        <th scope="col">Reservation Day</th>
+                        <th scope="col">Arrive Day</th>
+                        <th scope="col">Reservation Time</th>
+                        <th scope="col">Arrive Time</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="ticket__info">
+                        <td>199698</td>
+                        <td>Alexandria</td>
+                        <td>Cairo</td>
+                        <td>Sadat</td>
+                        <td>Wedensday</td>
+                        <td>Friday</td>
+                        <td>8:10 PM</td>
+                        <td>12:10 AM</td>
+                        <td>
+                            <button type="button" class="btn btn-danger deletebtn">
+                                Delete
+                            </button>
+                        </td>
+                        <td>
+							<a class="btn btn-primary" href="edit_ticket.html" role="button">Edit</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Bootstrap js File -->
+        <script src="JS/bootstrap.bundle.min.js"></script>
+        <!-- Font Awesome js File  -->
+        <script src="JS/all.min.js"></script>
+        <!-- AOS js File -->
+        <script src="JS/aos.js"></script>
+        <!-- JQuery File -->
+        <script src="JS/jquery-3.6.0.min.js"></script>
+        <!-- Main js File -->
+        <script src="JS/view_ticket.js"></script>
+    </body>
+</html>

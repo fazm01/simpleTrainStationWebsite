@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Transparent Login Form HTML CSS</title>
+      <link rel="stylesheet" href="CSS/Add%20Train.css">
+       <link rel="stylesheet" type="text/css" href="CSS/darkModeStyle.css">
+       <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+   </head>
+   <body>
+       <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="logo.png" alt="" style="width: 70px">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">WeTravel</span>
+                    <span class="profession">Administrator</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="dashboard.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="Add%20Train.html">
+                            <i class='bx bx-plus-circle icon' ></i>
+                            <span class="text nav-text">Add Train</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-edit icon'></i>
+                            <span class="text nav-text">Edit Train</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-report icon'></i>
+                            <span class="text nav-text">Reports</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-info-circle icon'></i>
+                            <span class="text nav-text">Manage Info</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-x-circle icon'></i>
+                            <span class="text nav-text">Remove Train</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+    </nav>
+      <div class="bg-img">
+          <img src="Background.jpeg" alt="">
+         <div class="content">
+            <header>Add Train</header>
+            <form action="#">
+               <div class="train">
+                  <input type="text" required placeholder="Train Name">
+               </div>
+               <div class="train id">
+                  <input type="number" id="quantity" name="quantity" min="1" max="100" required placeholder="Train ID">
+               </div>
+                <div class="train time">
+                  <input type="time" name="time" min="09:00" max="18:00" required>
+               </div>
+                <div class="train seats">
+                  <input type="number" name="seats" min="30" max="35" required placeholder="Train Seats">
+               </div>
+                <div class="train root">
+                    <label class="from">From</label>
+
+                    <select name="city" id="city">
+                      <option value="Cairo">Cairo</option>
+                      <option value="Alexandria">Alexandria</option>
+                      <option value="Aswan">Aswan</option>
+                      <option value="Suez">Suez</option>
+                    </select>
+                    <label class="to">To</label>
+
+                    <select name="city" id="city">
+                      <option value="Cairo">Cairo</option>
+                      <option value="Alexandria">Alexandria</option>
+                      <option value="Aswan">Aswan</option>
+                      <option value="Suez">Suez</option>
+                    </select>
+                </div>
+               <div class="submit">
+                  <input type="submit" name="submit" value="Submit">
+               </div>
+            </form>
+            
+          </div>
+      </div>
+      <script src="JS/darkMode.js"></script>
+   </body>
+</html>

@@ -1,0 +1,371 @@
+
+*{
+font-family:  sans-serif;
+margin: 0;
+padding: 0; 
+box-sizing: border-box;
+}
+
+.bg-img{
+    background-image: url("../Images/pexels-negative-space-33999.jpg");
+    min-height: 720px;
+    background-size: cover ;
+    filter: blur(3px);
+}
+/*  start check*/
+
+.check_train{
+    position: absolute;
+    top: 50%;
+    left:50% ;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 200px; 
+    background:rgba(0, 0, 0, .5) ;
+    border-radius: 60px ;
+    box-sizing: border-box;
+
+}
+input[type="text"],[type="number"]{
+
+    position:absolute;
+     outline:none; 
+     border: none;
+     width: 250px;
+     height: 35px;
+     border-bottom: 2px solid #0094ff;
+     background: none;
+     padding: 5px;
+     color: #fff;
+}
+input[value="check" ]{
+    position: absolute;
+    top: 150px;
+    left:120px ;
+    width: 120px;
+    height: 40px;
+    background: #258ed8;
+    border:none;
+    outline: none;
+    color: #fff;
+    border-radius:20px;
+    font-size: 20px;
+
+}
+input[value="check"]:hover{
+    background: #fff;
+    color: #0077ff;
+    }
+
+    
+/*  end check*/
+
+/*  start edit page*/
+.Edit-form{
+position: absolute;
+top: 50%;
+left:50% ;
+transform: translate(-50%,-50%);
+width: 350px;
+height: 450px; 
+background:rgba(0, 0, 0, .5) ;
+border-radius: 60px ;
+box-sizing: border-box;
+overflow: auto;
+display:none;
+
+}
+
+
+h2{
+color: #fff;
+text-align:center ;
+margin-top: 50px;
+
+}
+
+input[type="text1"],[type="text2"],[type="number1"],[type="number2"],[type="number3"]{
+     position:absolute;
+     outline:none; 
+     border: none;
+     width: 250px;
+     height: 35px;
+     border-bottom: 2px solid #0094ff;
+     background: none;
+     padding: 5px;
+     color: #fff;
+
+}
+
+
+input[type="text"]{
+top:50px;
+left: 50px;
+
+}
+input[type="number"]{
+top: 100px;
+left: 50px;
+
+}
+
+input[type="text1"]{
+    top:100px;
+    left: 50px;
+    
+    }
+
+input[type="text2"]{
+  top:150px;
+  left: 50px;
+        
+        }
+input[type="number1"]{
+   top:200px;
+   left: 50px;
+            
+  }
+
+input[type="number2"]{
+   top:250px;
+   left: 50px;
+ }
+
+ input[type="number3"]{
+    top:300px;
+    left: 50px;
+  }
+
+
+input[value="Edit"]{
+position: absolute;
+top: 350px;
+left:120px ;
+width: 120px;
+height: 40px;
+background: #258ed8;
+border:none;
+outline: none;
+color: #fff;
+border-radius:20px;
+font-size: 20px;
+}
+
+input[value="Edit"]:hover{
+background: #fff;
+color: #0077ff;
+}
+
+/*  end edit page*/
+
+
+/*  start Remove page*/
+
+.cover{
+    background-image: url("../imgs/wp7700135.jpg");
+    min-height: 720px;
+    background-size: cover ;
+    filter: blur(3px);
+}
+
+input[value="Remove"]{
+    position: absolute;
+    top: 260px;
+    left:120px ;
+    width: 120px;
+    height: 40px;
+    background: #0094ff;
+    border:none;
+    outline: none;
+    color: #fff;
+    border-radius:20px;
+    font-size: 20px;
+    }
+    
+    input[value="Remove"]:hover{
+    background: #fff;
+    color: #0094ff;
+    }
+    
+    .Remove_form{
+        position: absolute;
+        top: 50%;
+        left:50% ;
+        transform: translate(-50%,-50%);
+        width: 350px;
+        height: 400px; 
+        background:rgba(0, 0, 0, .5) ;
+        border-radius: 50px ;
+        box-sizing: border-box;
+    
+    }
+    input[type="remove_text"]{
+        position:absolute;
+        outline:none; 
+        border: none;
+        width: 250px;
+        height: 35px;
+        border-bottom: 2px solid #0094ff;
+        background: none;
+        padding: 5px;
+        color: #fff;
+        top:120px;
+        left: 50px;
+    
+    }
+    input[type="remove_id"]{
+        position:absolute;
+        outline:none; 
+        border: none;
+        width: 250px;
+        height: 35px;
+        border-bottom: 2px solid #0094ff;
+        background: none;
+        padding: 5px;
+        color: #fff;
+        top: 190px;
+        left: 50px;
+    }
+    h3{
+        color: #fff;
+        text-align:center ;
+        margin-top: 50px;
+        
+        }
+        /* end rmove page*/
+        
+        
+
+        /* start content*/
+         .contact{
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background:url(../Images/pexels-ron-lach-10397364.jpg) ;
+            background-size: cover;
+        }
+        .contact .content{
+            max-width: 800px;
+            text-align: center;
+        }
+        .contact .content h1{
+            font-size: 36px;
+            color: rgb(9, 8, 8);
+            font-weight: 600;
+            
+        }
+        
+        .contact .content p{
+        font-weight: 600;
+        color: rgb(9, 8, 8);;
+        font-size: 25px;
+        }
+        .container{
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .container .contactInfo{
+            width:20% ;
+            display: flex;
+            flex-direction: column;
+        }
+        .container .contactInfo .box{
+        position: relative;
+        padding: 40px 0;
+        display: flex;
+
+        }
+        .container .contactInfo .box .icon{
+            color:red ;
+            min-width: 60px;
+            height: 60px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            border-style: solid;
+            font-size: 22px;
+        }
+        .container .contactInfo .box .icon:hover{
+            background: red;
+            color: white;
+        }
+        .container .contactInfo .box .text{
+            display: flex;
+            margin-left: 20px;
+            font-size: 16px;
+            color: #8e8d8a;
+            flex-direction: column;
+            font-weight: 300;
+
+        }
+        .container .contactInfo .box .text h4{
+            color: #d79922;
+            font-weight: 500;
+            
+        }
+        .contactForm{
+            width: 30%;
+            padding: 40px;
+            background:rgba(0, 0, 0, 0.5) ;
+            border-radius: 50px ;
+            box-sizing: border-box;
+        }
+        .contactForm h1{
+            font-size: 30px;
+            color: #cc8b65;
+            font-weight: 500;
+        }
+        .contactForm .inputBox{
+          position: relative;
+          width: 100%;
+          margin-top: 10px;
+
+        }
+        .contactForm .inputBox input,.contactForm .inputBox textarea{
+        
+        outline:none; 
+        resize: none;
+        border: none;
+        width: 100%;
+        border-bottom: 2px solid #cc8b65;
+        background: none;
+        padding: 5px;
+        color: white;
+        top:120px;
+        left: 50px;
+        margin: 10px 0;
+        font-size: 16px;
+        padding: 5px 0;
+    
+            
+            
+        }
+      
+        .contactForm .inputBox input[type="submit"]{
+            width:150px ;
+            background: #cc8b65;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 20px;
+            border-radius:20px;
+            
+            
+        }
+        .contactForm .inputBox input[type="submit"]:hover{
+            background: #fff;
+            color: #cc8b65;
+            }
+        /* end content*/
+::placeholder{
+   color: #fff; 
+}

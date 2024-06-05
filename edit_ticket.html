@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Train</title>
+        <!-- Bootstrap  CSS File -->
+        <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+        <!-- Google Font Link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Font Awesome CSS File -->
+        <link rel="stylesheet" href="CSS/all.min.css" />
+        <!-- AOS CSS File -->
+        <link rel="stylesheet" href="CSS/aos.css" />
+        <!-- Main Style Sheet -->
+        <link rel="stylesheet" href="CSS/style.css" />
+    </head>
+    <body>
+        <!-- Nav Bar Start -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Train</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reserve_train.html">Reserve Train</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="view_ticket.html">View Ticket</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact_us.html">Contact Us</a>
+                  </li>
+      
+                </ul>
+                <div class="d-flex">
+                  <button class="btn btn-outline-success findbtn " type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                  <a href="Login.html" class="btn btn-outline-success" type="submit">
+                    Log in
+                  </a>
+                  <a href="Register.html" class="btn btn-outline-success" type="submit">
+                    Sign Up
+                  </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        <div class="search" style="display: none">
+            <input
+                class="form-control"
+                type="text"
+                placeholder="Search"
+                aria-label="default input example"
+            />
+        </div>
+        <!-- Nav Bar End -->
+        <div
+            class="modal fade mt-2"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">
+                            Error
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close closebtn"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body"><h3 class="modal__content"></h3></div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-secondary closebtn"
+                            data-bs-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Edit Form Start  -->
+        <h1 class="text-center">Edit Ticket</h1>
+        <div class="container">
+            <form class="ticket__form" name="edit">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                        >From</label
+                    >
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="From"
+                        name="from"
+                    />
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                        >To</label
+                    >
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                        placeholder="To"
+                        name="to"
+                    />
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                        >Station</label
+                    >
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Station"
+                        name="station"
+                    />
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                        >Reservation Day</label
+                    >
+                    <input
+                        type="date"
+                        class="form-control"
+                        value="2022-02-09"
+                    />
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                        >Arrive Day</label
+                    >
+                    <input
+                        type="date"
+                        class="form-control"
+                        value="2022-02-20"
+                    />
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                        >Reservation Time</label
+                    >
+                    <input type="time" class="form-control" value="22:53:05" />
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                        >Arrive Time</label
+                    >
+                    <input type="time" class="form-control" value="10:53:05" />
+                </div>
+            </form>
+            <button  class="btn btn-primary submitbtn">Submit</button>
+        </div>
+        <!--Edit Form End  -->
+
+        <!-- Bootstrap js File -->
+        <script src="JS/bootstrap.bundle.min.js"></script>
+        <!-- Font Awesome js File  -->
+        <script src="JS/all.min.js"></script>
+        <!-- AOS js File -->
+        <script src="JS/aos.js"></script>
+        <!-- JQuery File -->
+        <script src="JS/jquery-3.6.0.min.js"></script>
+        <!-- Main js File -->
+        <script src="JS/edit_ticket.js"></script>
+    </body>
+</html>

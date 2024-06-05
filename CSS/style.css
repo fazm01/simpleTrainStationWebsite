@@ -1,0 +1,396 @@
+/* 
+----------------------------Reserve Train Page CSS-----------------------------------------
+Table Of Contents 
+-First Section CSS (Reservation Form)
+-Second Section CSS (Information)
+-Third Section CSS  (statistics)
+-Fourth Section CSS (Offer)
+-Fifth Section CSS (Question)
+-Sixth Section CSS (Feature)
+-Footer Section CSS
+*/
+*{
+    font-family: 'Roboto', sans-serif;
+}
+img{
+    width:100%;
+}
+.unactive{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.work{
+    pointer-events: none;
+    opacity: 0.5;
+}
+.search{
+    margin: 10px;
+}
+.search input{
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+/*First Section CSS Start (Reservation Form)*/
+.reserve{
+    max-width: 1024px;
+    padding: 30px 0 0;
+    margin: auto;
+    padding-bottom:96px;
+}
+.reserve .reserve__img{
+    position: relative;
+}
+.reserve .reserve__img img{
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+
+}
+.reserve .reserve__content{
+    position: absolute;
+    top: 60%;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #d5dde6;
+    box-shadow: 0 4px 8px rgb(23 25 27 / 8%);
+    border-radius: 11px;
+    width: 100%;
+}
+.reserve .reserve__content h1{
+    margin: 0 24px 24px 0;
+    font-size: 32px;
+    line-height: 1.1;
+    color: #414042;
+    font-weight: bold;
+}
+.reserve .reserve__content .reserve__choice{
+    padding-right: 32px;
+    padding-bottom: 24px;
+    font-size: 14px;
+}
+.reserve .reserve__input .input-group-text{
+    background-color:unset;
+    border: none;
+    border-top: 1px solid #ced4da;
+    border-left: 1px solid #ced4da;
+    border-bottom: 1px solid #ced4da;
+}
+.reserve .reserve__input input{
+    border-left: none;
+}
+.reserve .reserve__input input:focus{
+    box-shadow: none;
+    outline: none;
+
+}
+.reserve .form-control:focus{
+    border-color:#ced4da;
+}
+.reserve input:focus span i {
+    color:#ff5c5c;
+}
+.reserve .reserve__input input[type="date"]{
+    border:1px solid #ced4da ;
+}
+.reserve .reserve__input .replace {
+    text-align: center;
+}
+.reserve .reserve__input .replace .replace__btn{
+    background-color: #fff;
+    border: 1px solid #d5dde6;
+    color:black;
+    padding: 11px;
+    height: 40px;
+    width: 48px;
+    border-radius:7px;
+    -webkit-border-radius:7px;
+    -moz-border-radius:7px;
+    -ms-border-radius:7px;
+    -o-border-radius:7px;
+    transition: all 2s;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+}
+
+.reserve .reserve__input .replace i{
+    height: 24px;
+    width: 24px;
+    font-size: 24px;
+}
+.reserve .searchbtn{
+    background-color: #ff5c5c;
+    color: #fff;
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+    padding: 0;
+    border-radius:7px;
+    -webkit-border-radius:7px;
+    -moz-border-radius:7px;
+    -ms-border-radius:7px;
+    -o-border-radius:7px;
+    border:none;
+}
+.reserve .searchbtn:hover{
+    background-color: #d03838;
+}
+.reserve .form-check-input:checked {
+    background-color: #ff5c5c;
+    border-color: #ff5c5c;
+}
+.reserve .form-check-input:focus{
+    box-shadow: 0 0 0 0.25rem hwb(0 36% 0% / 0.329);
+}
+.reserve .form-select{
+    width:20%;
+    margin-top: 10px;
+}
+.reserve .traveler{
+    margin: 10px;
+}
+.reserve .traveler .dropdown-menu li{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+}
+.reserve .traveler .dropdown-menu li button{
+    margin: 10px;
+}
+/*First Section CSS End (Reservation Form)*/
+
+/* Second Section CSS Start (Information) */
+.info{
+    margin-top: 100px;
+    padding: 60px 0;
+    text-align: center;
+}
+.info .card .card__img {
+    overflow:hidden;
+}
+.info .card  .card__img img{
+    transition: all 2s;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+    cursor: pointer;
+}
+
+.info .card .card__img img:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    opacity: 0.5;
+}
+/* Second Section End (Information) */
+
+/*Third Section CSS Start (statistics)*/
+.statistics__content {
+	display: flex;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.statistics{
+    background-color: #00bfd5;
+    text-align: center;
+    padding: 10px;
+}
+.statistics__item__icon {
+	margin-bottom: 3rem;
+	font-size: 3rem;
+}
+.statistics__item__number {
+	font-size: 3rem;
+	display: block;
+}
+.statistics__item__title {
+	font-style: italic;
+	font-size: 4rem;
+}
+/*Third Section CSS End (statistics)*/
+
+/* Fourth Section CSS Start (Offer) */
+.offer{
+    margin: 96px 0;
+}
+.offer .offer__item__icon{
+    font-size: 40px;
+    color: #00bfd5;
+    margin: 10px;
+}
+.offer .offer__item__content{
+    padding-left: 16px;
+}
+.offer .offer__item__content h6{
+    font-weight: 700;
+}
+/* Fourth Section CSS End (Offer) */
+
+/* Fifth Section CSS Start (Question) */
+.question{
+    margin: 96px 0;
+}
+.question .accordion-button:not(.collapsed){
+    background-color: #00bfd5;
+    color:black;
+    font-weight: bold;
+}
+.question .question__header{
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.question .accordion-button:focus{
+    border-color: black;
+    box-shadow: 0 0 0 0.25rem rgba(205, 205, 205, 0.25);
+}
+/* Fifth Section CSS End (Question) */
+
+/* Sixth Section CSS Start (Feature) */
+.feature{
+    background-color: #00bfd5;
+    padding: 10px;
+}
+.feature .feature__slider{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.feature .feature__slider h2{
+    font-size: 45px;
+    font-weight: 300;
+    padding: 5px 0;
+    color: #002436;
+}
+.feature .feature__slider h3{
+    color:#004d6e;
+    font-size:16px;
+    font-weight:700;
+}
+.feature .feature__slider button{
+    margin-top: 30px;
+    background-color: #167fa6;
+    text-transform: uppercase;
+    color:white;
+    padding:12px 16px;
+}
+.feature .feature__slider button:hover{
+    background-color: black;
+}
+.feature .feature__img{
+    width:30%;
+    height: 100%;
+}
+.feature .feature__img img{
+    height: 100%;
+    border-radius: 50%;
+}
+.feature .carousel-control-prev{
+    top: -52px;
+    right: 0;
+    bottom: auto;
+    background-color: rgb(13, 110, 253);
+    padding: 5px;
+    border-radius: 5px;
+    fill: white;
+}
+.feature .carousel-control-next{
+    top: -52px;
+    bottom: auto;
+    background-color: rgb(13, 110, 253);
+    padding: 5px;
+    border-radius: 5px;
+    fill: white;
+}
+/* Sixth Section CSS End (Feature) */
+
+/* Footer Section CSS Start */
+.footer{
+    background-color: rgb(248, 249, 250);
+    padding: 50px;
+    text-align: center;
+}
+.footer .footer__social{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.footer .footer__social li{
+    margin-left: 20px;
+    transition: all 2s;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+}
+.footer .footer__social li a  {
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #004d6e;
+    padding: 10px;
+    color:white;
+
+}
+.footer .footer__social li .face a:hover {
+    background-color: #4267b2;
+}
+.footer .footer__social li .google a:hover {
+    background-color: #ea4335;
+}
+.footer .footer__social li .linked a:hover {
+    background-color: #0077b5;
+}
+.footer .footer__social li .twitter a:hover {
+    background-color: #1da1f2;
+}
+.footer .footer__social li:hover  {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+/* Footer Section CSS End */
+/* ----------------------------Reserve Train Page CSS----------------------------------------- */
+
+/* ----------------------------View Ticket Page CSS-----------------------------------------  */
+.ticket{
+    background-image: url("../Images/tickect.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ticket__table{
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.204);
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+/* ----------------------------View Ticket Page CSS-----------------------------------------  */
+/* ----------------------------Edit Ticket Page CSS-----------------------------------------  */
+.ticket__form{
+    width: 50%;
+    margin: auto;
+}
+/* ----------------------------Edit Ticket Page CSS-----------------------------------------  */

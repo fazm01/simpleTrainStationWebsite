@@ -1,0 +1,150 @@
+﻿/* Define custom fonts */
+
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('fonts/ballpark.eot');
+    src: url('fonts/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ballpark.woff') format('woff'),
+         url('fonts/ballpark.ttf') format('truetype'),
+         url('fonts/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('fonts/dayrom.eot');
+    src: url('fonts/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('fonts/dayrom.woff') format('woff'),
+         url('fonts/dayrom.ttf') format('truetype'),
+         url('fonts/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Footer Section CSS Start */
+.footer{
+    background-color: rgb(248, 249, 250);
+    padding: 50px;
+    text-align: center;
+}
+.footer .footer__social{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.footer .footer__social li{
+    margin-left: 20px;
+    transition: all 2s;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+}
+.footer .footer__social li a  {
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #004d6e;
+    padding: 10px;
+    color:white;
+
+}
+.footer .footer__social li .face a:hover {
+    background-color: #4267b2;
+}
+.footer .footer__social li .google a:hover {
+    background-color: #ea4335;
+}
+.footer .footer__social li .linked a:hover {
+    background-color: #0077b5;
+}
+.footer .footer__social li .twitter a:hover {
+    background-color: #1da1f2;
+}
+.footer .footer__social li:hover  {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+/* Footer Section CSS End */
+
+a:link {
+  text-decoration: none;
+    color:#084c6c;
+}
+
+a:visited {
+  text-decoration: none;
+    color:#084c6c;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+    color:#084c6c;
+}
+img{
+    height:100px;
+    width:140px;
+}
+
+#banner_image
+{
+    margin-top: 15px;
+    height: 200px;
+    border-radius: 5px;
+    background: url('images/contactus.png') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+
+#banner_description
+{
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 5px 5px;
+    width: 100%;
+    height: 33px;
+    padding-top: 15px;
+    padding-left: 4px;
+    background-color:#084c6c;
+    color: black;
+    
+    
+}
+.carousel-control-next, .carousel-control-prev{
+    color: #084c6c;
+}
+#btn1, #btn2, #btn3{
+    color: white;
+    background-color:#084c6c;    
+}
+.carousel-inner{
+     background-color:#084c6c;    
+}
+
+#main_wrapper{
+    width:1000px;
+    margin:auto;
+}
+#r-main_wrapper{
+   width:500px;
+    margin:auto;
+}
+#terms1:link{
+    text-decoration: underline;
+}

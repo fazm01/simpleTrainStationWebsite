@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Admin Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="CSS/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="CSS/darkModeStyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="logo.png" alt="" style="width: 70px">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">WeTravel</span>
+                    <span class="profession">Administrator</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="dashboard.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="Add_Train.html">
+                            <i class='bx bx-plus-circle icon' ></i>
+                            <span class="text nav-text">Add Train</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="UpdateTrain.html">
+                            <i class='bx bxs-edit icon'></i>
+                            <span class="text nav-text">Edit Train</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-report icon'></i>
+                            <span class="text nav-text">Reports</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-info-circle icon'></i>
+                            <span class="text nav-text">Manage Info</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="Remove.html">
+                            <i class='bx bxs-x-circle icon'></i>
+                            <span class="text nav-text">Remove Train</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+    </nav>
+        <!--Main-->
+        <div class="main">
+            <div class="topbar">
+                <!--UserImg-->
+                <div class="user">
+				<img src="user.jpg" alt="">
+				<ul class="profile-link">
+					<li><a href="#"><i class='bx bxs-user-circle icon' ></i> Profile</a></li>
+					<li><a href="#"><i class='bx bxs-cog icon' ></i> Settings</a></li>
+					<li><a href="#"><i class='bx bxs-log-out-circle icon' ></i> Logout</a></li>
+				</ul>
+			</div>
+            </div>
+            <!--cards-->
+            <div class="cardParent">
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">1,504</div>
+                        <div class="cardName">Daily Views</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="eye"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">10</div>
+                        <div class="cardName">Trains</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="train"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">110</div>
+                        <div class="cardName">Sold Tickets</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="card"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">$2,004</div>
+                        <div class="cardName">Earnings</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="cash"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Recent Orders</h2>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>ID</td>
+                                <td>Train</td>
+                                <td>Source</td>
+                                <td>Destination</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Train1</td>
+                                <td>Alexandria</td>
+                                <td>Cairo</td>
+                                <td><span class="status available">Available</span></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Train2</td>
+                                <td>Suez</td>
+                                <td>Cairo</td>
+                                <td><span class="status available">Available</span></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Train3</td>
+                                <td>Cairo</td>
+                                <td>Suez</td>
+                                <td><span class="status notAvailable">Not Available</span></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Train4</td>
+                                <td>Alexandria</td>
+                                <td>Suez</td>
+                                <td><span class="status available">Available</span></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Train5</td>
+                                <td>Cairo</td>
+                                <td>Hurghada</td>
+                                <td><span class="status available">Available</span></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Train6</td>
+                                <td>Cairo</td>
+                                <td>Aswan</td>
+                                <td><span class="status available">Available</span></td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Train7</td>
+                                <td>Aswan</td>
+                                <td>Suez</td>
+                                <td><span class="status available">Available</span></td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Train8</td>
+                                <td>Suez</td>
+                                <td>Hurghada</td>
+                                <td><span class="status notAvailable">Not Available</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--Top Cities-->
+                <div class="topCities">
+                    <div class="cardHeader">
+                        <h2>Top Cities</h2>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>City</td>
+                                <td>Tickets Sold</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Alexandria</td>
+                                <td>200</td>
+                                <td><span class="status available">Available</span></td>
+                            </tr>
+                            <tr>
+                                <td>Cairo</td>
+                                <td>188</td>
+                                <td><span class="status available">Available</span></td>
+                            </tr>
+                            <tr>
+                                <td>Hurghada</td>
+                                <td>141</td>
+                                <td><span class="status available">Available</span></td>
+                            </tr>
+                            <tr>
+                                <td>Aswan</td>
+                                <td>110</td>
+                                <td><span class="status available">Available</span></td>
+                            </tr>
+                            <tr>
+                                <td>Suez</td>
+                                <td>86</td>
+                                <td><span class="status available">Available</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.esm.js"></script>
+<script src="JS/dashScript.js"></script>
+<script src="JS/darkMode.js"></script>
+</body>
+
+</html>

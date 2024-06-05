@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+
+        <title>Contact Us </title>
+        <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+        <link rel="stylesheet" href="CSS/all.min.css">
+        <link rel="stylesheet" href="CSS/web.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Train</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reserve_train.html">Reserve Train</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="view_ticket.html">View Ticket</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact_us.html">Contact Us</a>
+                  </li>
+      
+                </ul>
+                <div class="d-flex">
+                  <button class="btn btn-outline-success findbtn " type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                  <a href="Login.html" class="btn btn-outline-success" type="submit">
+                    Log in
+                  </a>
+                  <a href="Register.html" class="btn btn-outline-success" type="submit">
+                    Sign Up
+                  </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        <div class="search" style="display: none">
+            <input
+                class="form-control"
+                type="text"
+                placeholder="Search"
+                aria-label="default input example"
+            />
+        </div>
+<section class="contact"> 
+        <div class="content">
+           <h1> Contact us</h1>
+                <p>
+                    we'd love to hear from you </p>
+        </div>
+        <div class="container">
+        <div class="contactInfo">
+            <div class="box">
+                <div class="icon" ><i class="fa-solid fa-location-pin"></i></div>
+                <div class="text">
+                    <h4>Address </h4>
+                    <p>
+                        Suez Rd, 
+                        <br/>EL Sherouk City<br/>Cairo<br/></p>
+
+                </div>
+            </div>
+        
+    <div class="box">
+            <div class="icon"> <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <div class="text">
+                <h4>Phone </h4>
+                <p> 01520896233</p>
+                <p> 01120977749</p>                
+            </div>
+        </div>
+        <div class="box">
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="text">
+                <h4>Email </h4>
+                <p>shehabeldin189514
+                    @bue.edu.egy</p>
+            </div>
+        </div>
+
+        </div>
+        <div class="contactForm" >
+            <form name="form_c" onsubmit="contact()">
+                <div>
+                    <h1>send message </h1>
+                <div class="inputBox" >
+                    <input  type="text-con" name="name"  placeholder="Full Name" />
+                    
+                </div>
+                <div class="inputBox" >
+                    <input  type="text-con" name="email"   placeholder="Email" />
+                    
+                </div>
+                <div class="inputBox" >
+                <textarea  placeholder="Type Your Massage" name="message"></textarea>
+                    
+                </div>
+                <div class="inputBox" >
+                    <input type="submit" value="Send message"/>
+                    </div>
+                
+            </form>
+        </div>
+    </div>
+    </section>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/all.min.js"> </script>
+    <script src="JS/jquery-3.6.0.min.js"> </script>
+    <SCRipt>
+       
+      $(document).ready(function( ){
+$(".findbtn").click(function(){
+    $(".search").toggle();
+  })
+});
+    
+    </SCRipt>
+    <script src="JS/java.js"> </script>
+</body>
+</html>
